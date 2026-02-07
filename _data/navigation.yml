@@ -1,11 +1,9 @@
 main:
-  - title: "<b>Research</b>"
-    url: /#pubs
-  - title: "<b>Teaching</b>"
-    url: /#teaching
-  - title: "<b>R Media</b>"
-    url: /#media
-  - title: "<b>Datasets</b>"
-    url: /#datasets
-  - title: "<b>C.V.</b>"
-    url: /cv/madalsa_cv.pdf
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications
+  - title: "Tools & Data"
+    url: /tools
+  - title: "Team"
+    url: /team
