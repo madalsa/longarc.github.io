@@ -2,10 +2,13 @@
 
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "minimal-mistakes-jekyll"
-gem "kramdown-parser-gfm"
+gem "github-pages", group: :jekyll_plugins
 gem "jekyll-theme-minimal"
-group :jekyll_plugins do
 
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jekyll-include-cache"
 end
