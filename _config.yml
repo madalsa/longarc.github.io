@@ -1,9 +1,9 @@
 # Site Settings
 locale                   : "en-US"
-title                    : "Singh Lab"
+title                    : "Long Arc Lab"
 title_separator          : "-"
-name                     : "Singh Research Group"
-description              : "Equitable and affordable strategies to rapidly decarbonize energy systems"
+name                     : "Long Arc Lab"
+description              : "Engineering climate solutions that work now for long-term outcomes"
 
 #url                      : "https://madalsa.org"
 #baseurl                  : "/"
