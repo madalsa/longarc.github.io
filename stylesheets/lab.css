@@ -142,7 +142,8 @@ img {
 
 /* ---------- Hero Section ---------- */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, #7b4a8e 100%);
+  background: linear-gradient(135deg, rgba(74, 25, 66, 0.82) 0%, rgba(107, 45, 91, 0.75) 40%, rgba(123, 74, 142, 0.7) 100%),
+              url('/images/electricity.jpg') center/cover no-repeat;
   color: #fff;
   padding: 5rem 2rem;
   text-align: center;
@@ -766,6 +767,56 @@ img {
   .research-areas {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- Blog Article ---------- */
+.blog-article {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.blog-article p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+.blog-article h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.blog-article ol,
+.blog-article ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+.blog-article li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+.blog-figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+.blog-figure img {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+.blog-figure figcaption {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: 0.75rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+.blog-references {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+.blog-references li {
+  margin-bottom: 0.75rem;
 }
 
 /* ---------- Utilities ---------- */

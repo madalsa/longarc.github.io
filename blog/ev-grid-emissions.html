@@ -1,0 +1,91 @@
+---
+layout: lab
+title: "EV Grid Emissions - Critical Emissions Factors"
+permalink: /blog/ev-grid-emissions
+---
+
+<div class="page-header">
+  <h1>Ensuring greenhouse gas reductions from electric vehicles compared to gasoline vehicles requires a cleaner U.S. electricity grid</h1>
+  <p>Madalsa Singh, Tugce Yuksel, Jeremy Michalek, In&ecirc;s Azevedo &middot; <em>Nature Scientific Reports</em>, 2024</p>
+</div>
+
+<section class="section">
+  <div class="section-container">
+    <article class="blog-article">
+
+      <div class="pub-links" style="margin-bottom: 2rem;">
+        <a href="https://www.nature.com/articles/s41598-024-51697-1">DOI</a>
+        <a href="/Papers/CEF/Paper.pdf">Paper</a>
+        <a href="/Papers/CEF/SI.pdf">SI</a>
+      </div>
+
+      <p>Emissions from electric vehicles depend on ambient conditions and when and where they are charged. Ambient conditions like temperature and drive cycle influence vehicle efficiency, while the carbon intensity of the power plants used to charge the vehicle differs by location and time of charging. In this work, we:</p>
+
+      <ol>
+        <li>Introduce Critical Emissions Factors (CEFs), defined as the electricity emissions intensity that needs to be achieved during charging to ensure that electric vehicles achieve lifecycle greenhouse gas emissions parity with some of the most efficient gasoline hybrids in the United States.</li>
+        <li>Identify regions that have achieved the required CEFs for vehicle pairs and regions that will require further emissions reductions to do so.</li>
+        <li>Update previous results of comparative lifecycle emissions between electric vehicles and gasoline hybrids as presented in Yuksel et al. [1] using new data.</li>
+      </ol>
+
+      <p>Figure 1 shows the dependence of electric vehicle efficiency with temperature (20 F, 72 F, and 95 F) and drive cycle (UDDS and HWFET drive cycles, which approximate urban and highway driving). Temperature affects both the battery performance, in the case of EVs, as well as increases the overall energy required for heating, ventilation, and air conditioning during high and low temperatures for vehicles. Gasoline hybrids are more sensitive to drive cycles than electric vehicles.</p>
+
+      <figure class="blog-figure">
+        <img src="/images/blog/cef/fig1.png" alt="Electric vehicle fuel efficiency dependent on temperature and drive cycle">
+        <figcaption>Figure 1: Electric vehicle fuel efficiency (Wh/mile) dependent on temperature and drive cycle.</figcaption>
+      </figure>
+
+      <p>When conducting this study, the latest data available was from the American Automotive Association for 2018 and 2017 models of Nissan Leaf, Chevrolet Bolt, and Tesla Model S 75D, a luxury electric vehicle [2]. In recent months, Argonne National Lab's D3 laboratory has released more vehicle test data [3]. The models used in our study have higher energy consumption in highway drive cycles but similar values for urban drive cycles compared to other models. To reflect the new data, we add the 2020 Tesla Model 3 results to exhaustively characterize electric vehicles.</p>
+
+      <p>Electric vehicle emissions also depend on which power plants are being used to charge the vehicle at a given time and location. In this work, we benchmark our results using marginal emissions factors for 2018 [4]. Marginal emissions factors are the emissions intensity of the last generator(s) kicked in to serve the incremental load from vehicle charging. Recent research shows that marginal electricity emissions factors have remained persistently high despite steady reductions in the average electricity emissions [5]. We assume that vehicles are charged after the last trip of the day based on data from the National Household Transport Survey, which collects a day's worth of driving characteristics from 256,000 people in the United States. To test these assumptions, the paper's supplementary information (figures S6-S9) shows results using average emissions factors and vehicle charging during the lowest emissions hours.</p>
+
+      <figure class="blog-figure">
+        <img src="/images/blog/cef/fig2.png" alt="Hourly marginal emissions factors for MRO and NPCC">
+        <figcaption>Figure 2: Hourly marginal emissions factors for MRO and NPCC, which serve parts of the Midwest and New England.</figcaption>
+      </figure>
+
+      <h2>Critical Emissions Factors: Break-even emissions intensity of the grid for EV-hybrid carbon parity</h2>
+
+      <p>To achieve emissions parity with efficient gasoline hybrids, battery electric vehicles (with US-produced NMC batteries) require power grid emissions between 421 to 1101 gCO<sub>2</sub>/kWh, depending on the vehicle pair and location. For context, emissions intensity of natural gas generated power varies between 395-461 gCO<sub>2</sub>/kWh, while that from coal varies between 911-1079 gCO<sub>2</sub>/kWh. Some regions &ndash; shown in Figure 3 in green and yellow &ndash; would require lower carbon electricity to achieve carbon parity between the pair of vehicles, while others &ndash; in black and grey &ndash; would do so even with high carbon electricity. The paper also presents results with varying battery locations and chemistry. While battery emissions are usually a small portion of the overall life-cycle emissions of electric vehicles, battery chemistry, manufacturing locations, and lifetime assumptions can impact the level of decarbonization needed in the electricity grid as the supply chain of electric vehicles becomes more diversified. Lithium Iron Phosphate (LFP) and manufacturing in locations with lower emissions intensity help reduce EV emissions.</p>
+
+      <figure class="blog-figure">
+        <img src="/images/blog/cef/fig3.png" alt="Critical emissions factors map of the United States">
+        <figcaption>Figure 3: Critical emissions factors that the electric grid needs to achieve so that BEVs (Tesla Model 3, Nissan Leaf, Chevy Bolt, or Tesla Model S) reach lifecycle GHG emissions parity with gasoline hybrids (Toyota Prius or Honda Accord Hybrid) assuming 120k miles and NMC batteries manufactured in the US.</figcaption>
+      </figure>
+
+      <p><strong>Where do the marginal emissions from the grid need to be reduced further?</strong> In Fig. 4, we compare CEFs to current regional marginal emissions to identify which regions already have reached the required levels of local grid intensity to achieve carbon parity between battery electric and gasoline vehicles and which have yet to. We show the difference between CEFs and current marginal emissions factors for NERC regions weighted by the convenience charging profile (to reflect the charging time). All and or almost all parts of the U.S. have achieved the required CEF for Tesla Model 3, Leaf, and Bolt to break even with gasoline hybrids. All regions of the US, except parts of the Northeast and Florida, would need to reduce marginal emission factors up to 342 gCO<sub>2</sub>/kWh for the Tesla Model S to have lower lifecycle emissions than these gasoline hybrids.</p>
+
+      <figure class="blog-figure">
+        <img src="/images/blog/cef/fig4.png" alt="Reductions needed in grid intensity for EV-hybrid parity">
+        <figcaption>Figure 4: Reductions needed in current marginal grid intensity so that electric vehicles have less or the same consequential lifecycle emissions as gasoline hybrid vehicles. The figure assumes that NMC batteries are manufactured in the U.S. and that vehicles are driven for 120,000 miles over their lifetime.</figcaption>
+      </figure>
+
+      <h2>Comparative life-cycle emissions estimates</h2>
+
+      <p>We update Yuksel et al.'s comparative life-cycle emissions estimate for vehicle pairs using marginal emissions factors and convenience charging profiles. We provide sensitivity to these assumptions in supplementary information (figures S6-S9).</p>
+
+      <p>We find that Bolt and Leaf electric vehicles have lower emissions than the Prius and Accord hybrids in almost all counties of the West, Texas, Florida, and New England. In comparison, they have higher emissions in rural counties of the Midwest and the South. Tesla Model 3 has lower or comparable emissions across the entire country. In contrast, the Tesla Model S, a luxury EV, has higher emissions than the Prius and Accord.</p>
+
+      <figure class="blog-figure">
+        <img src="/images/blog/cef/fig5.png" alt="Life-cycle CO2 emissions comparison map">
+        <figcaption>Figure 5: Difference between life-cycle CO<sub>2</sub> emissions per km for battery electric vehicles and gasoline hybrid vehicles using hourly Marginal Emissions Factors for NERC regions in 2018. Negative values (in blue) denote instances where battery electric vehicles are lower emitting than gasoline hybrid vehicles. Positive numbers (in red) refer to values battery electric vehicles are higher emitting than gasoline hybrids.</figcaption>
+      </figure>
+
+      <h2>Conclusion</h2>
+
+      <p>Comparative lifecycle emissions between EVs and hybrids depend on the two vehicles chosen for comparison, the emissions intensity of the grid, charging time, and ambient factors like temperature and drive cycle. We introduce Critical Emissions Factors as the break-even emissions intensity needed for electric vehicles to achieve carbon parity with gasoline hybrids. CEFs are agnostic to assumptions baked in emissions accounting of the electricity grid &ndash; they present what should be the upper-bound of the electricity emissions intensity.</p>
+
+      <p>We find efficient EVs such as Tesla Model 3 have lower emissions than gasoline hybrids across the country, but parts of the Midwest and Southwest still need reductions for certain vehicle pairs to achieve carbon parity. A big motivation for this project is to peel through different assumptions buried in emissions accounting to find the best strategies for climate mitigation with EVs. Decarbonizing the grid further in certain locations (Midwest and parts of Southwest), charging during low emissions hours, and considering the energy requirements of battery chemistries and their production location can further reduce emissions from EVs.</p>
+
+      <h2>References</h2>
+
+      <ol class="blog-references">
+        <li>T. Yuksel, M.-A. M. Tamayao, C. Hendrickson, I. M. L. Azevedo, and J. J. Michalek, "Effect of regional grid mix, driving patterns and climate on the comparative carbon footprint of gasoline and plug-in electric vehicles in the United States," <em>Environ. Res. Lett.</em>, vol. 11, no. 4, p. 044007, Apr. 2016.</li>
+        <li>"AAA Electric Vehicle Range Testing Report." American Automobile Association.</li>
+        <li>"Downloadable Dynamometer Database," Argonne National Laboratory.</li>
+        <li>"Electricity Marginal Factors Estimates," CEDM.</li>
+        <li>S. P. Holland, M. J. Kotchen, E. T. Mansur, and A. J. Yates, "Why marginal CO<sub>2</sub> emissions are not decreasing for US electricity: Estimates and implications for climate policy," <em>Proc. Natl. Acad. Sci. USA</em>, vol. 119, no. 8, Feb. 2022.</li>
+      </ol>
+
+    </article>
+  </div>
+</section>
