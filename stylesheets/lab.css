@@ -148,8 +148,12 @@ img {
   background: linear-gradient(160deg, rgba(74, 25, 66, 0.88) 0%, rgba(107, 45, 91, 0.78) 40%, rgba(160, 80, 50, 0.7) 100%),
               url('/images/electricity.jpg') center/cover no-repeat;
   color: #fff;
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
   text-align: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-container {
   max-width: var(--max-width);
@@ -227,6 +231,9 @@ img {
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   letter-spacing: -0.01em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-burnt-orange);
+  display: inline-block;
 }
 .section-header p {
   font-size: 1.1rem;
@@ -235,20 +242,19 @@ img {
 
 /* ---------- Page Header ---------- */
 .page-header {
-  background: var(--color-bg-section);
-  border-bottom: 1px solid var(--color-border);
-  padding: 3rem 2rem;
+  background: linear-gradient(160deg, rgba(74, 25, 66, 0.92) 0%, rgba(107, 45, 91, 0.85) 50%, rgba(160, 80, 50, 0.78) 100%);
+  padding: 3.5rem 2rem;
   text-align: center;
 }
 .page-header h1 {
   font-family: var(--font-serif);
   font-size: 2.25rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 .page-header p {
-  color: var(--color-text-light);
+  color: rgba(255,255,255,0.85);
   font-size: 1.05rem;
   max-width: 600px;
   margin: 0 auto;
@@ -257,7 +263,7 @@ img {
 /* ---------- News / Announcements ---------- */
 .announcement {
   background: linear-gradient(135deg, #fdf2f6 0%, #f5e6ed 100%);
-  border-left: 4px solid var(--color-accent);
+  border-left: 4px solid var(--color-burnt-orange);
   padding: 1.25rem 1.5rem;
   border-radius: 0 8px 8px 0;
   margin-bottom: 1.5rem;
@@ -312,8 +318,8 @@ img {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-primary-light);
-  background: rgba(107, 45, 91, 0.1);
+  color: var(--color-burnt-orange-dark);
+  background: rgba(196, 90, 42, 0.1);
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
   margin-bottom: 0.5rem;
@@ -394,7 +400,7 @@ img {
   font-weight: 600;
   color: var(--color-text);
   padding-bottom: 0.75rem;
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-burnt-orange);
   margin-bottom: 1rem;
   display: inline-block;
 }
@@ -743,7 +749,8 @@ img {
   }
 
   .hero {
-    padding: 3.5rem 1.5rem;
+    padding: 5rem 1.5rem;
+    min-height: 70vh;
   }
   .hero h1 {
     font-size: 1.85rem;
