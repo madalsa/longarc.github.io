@@ -25,6 +25,9 @@
   --color-border: #e8dfe5;
   --color-border-light: #f0eaed;
   --color-warm-gold: #d4a857;
+  --color-burnt-orange: #c45a2a;
+  --color-burnt-orange-light: #d4723f;
+  --color-burnt-orange-dark: #a84820;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --max-width: 1100px;
@@ -142,10 +145,9 @@ img {
 
 /* ---------- Hero Section ---------- */
 .hero {
-  background: linear-gradient(135deg, rgba(74, 25, 66, 0.82) 0%, rgba(107, 45, 91, 0.75) 40%, rgba(123, 74, 142, 0.7) 100%),
-              url('/images/electricity.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, #7b4a8e 100%);
   color: #fff;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 4rem;
   text-align: center;
 }
 .hero-container {
@@ -167,6 +169,27 @@ img {
   margin: 0 auto;
   opacity: 0.92;
   font-weight: 300;
+}
+
+/* ---------- Hero Image ---------- */
+.hero-image {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  line-height: 0;
+}
+.hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+/* ---------- Research Section ---------- */
+.research-section {
+  background: var(--color-bg-warm);
+  padding: 3.5rem 2rem;
+  border-bottom: 3px solid var(--color-burnt-orange);
 }
 
 /* ---------- Section Styles ---------- */
@@ -557,26 +580,27 @@ img {
   gap: 1.5rem;
 }
 .research-area {
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: 10px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-burnt-orange);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.research-area:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
 }
 .research-area h3 {
   font-size: 1.15rem;
   font-weight: 600;
+  color: var(--color-primary-dark);
   margin-bottom: 0.5rem;
 }
 .research-area p {
   font-size: 1rem;
-  opacity: 0.85;
+  color: var(--color-text-light);
   line-height: 1.65;
-}
-
-/* Hero variant for research areas */
-.hero .research-areas {
-  margin-top: 2.5rem;
-  text-align: left;
 }
 
 /* ---------- View All Link ---------- */
@@ -601,7 +625,7 @@ img {
 
 /* ---------- Join Banner ---------- */
 .join-banner {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #7b4a8e 100%);
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, #7b4a8e 100%);
   color: #fff;
   padding: 3.5rem 2rem;
   text-align: center;
@@ -710,13 +734,24 @@ img {
   }
 
   .hero {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 2.5rem;
   }
   .hero h1 {
     font-size: 1.85rem;
   }
   .hero p {
     font-size: 1rem;
+  }
+
+  .hero-image {
+    max-height: 350px;
+  }
+  .hero-image img {
+    height: 350px;
+  }
+
+  .research-section {
+    padding: 2.5rem 1.25rem;
   }
 
   .section {
