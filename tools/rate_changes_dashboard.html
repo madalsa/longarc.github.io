@@ -228,11 +228,6 @@
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 <div id="tab-customers" class="tab-content">
     <div class="key-message">
-        Residential customers have grown ~1%/yr nationally.
-        The key story since 2019 has been a <b>surge in load at specific utilities</b> driven by data centers and electrification.
-        Data center load shows up as both industrial and commercial sales.
-        Hyperscale facilities are often industrial, while colocation and smaller facilities are often commercial.
-        We account for both classes to spot where data centers are landing.
     </div>
 
     <div class="section-title">National trends</div>
@@ -691,12 +686,10 @@ window.addEventListener('load', () => {
     renderAggCapex();
     renderAggOpex();
 
-    // Pre-load PG&E as example
-    const pge = D.iou_list.find(n => n.includes('PACIFIC GAS'));
-    if (pge) {
-        document.getElementById('iou-spend-input').value = pge.substring(0, 55);
-        updateIOU(pge);
-    }
+    // Show placeholder message until user searches
+    document.getElementById('iou-chart-top').innerHTML='<p style="padding:40px 20px;color:#999;font-style:italic;text-align:center;">Search for a utility above to see its capital and operating expense trends.</p>';
+    document.getElementById('iou-chart-opex').innerHTML='';
+    document.getElementById('iou-chart-capex').innerHTML='';
 });
 </script>
 </body>
